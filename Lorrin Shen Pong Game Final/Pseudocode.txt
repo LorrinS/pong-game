@@ -1,0 +1,67 @@
+set variables up for screen size, colors, highscore and lives. 
+make the display(window) for the game.
+
+when the code is run the menu will appear first along with background music that will keep looping until the program is closed.
+The background should be put on the screen first.
+Then the buttons, title and highscore.
+The title will be the biggest words on screen, and a bit higher than the middle.
+The highscore will be right under the title with a maximum, the objective score, 20.
+The buttons will be under that evenly spread out on the same y coordinate.
+The Start button will be green, the instructions button will be blue and the quit button will be red
+When the mouse cursor hovers over a button it will become a brighter version of it's color, bright red, bright green, bright blue.
+The words Start, Instructions and Quit will be on the middle of the rectangle that creates the button.
+The words start, instructions and quit will be white When the mouse cursor hovers over a button the on the button word will become black.
+
+If quit gets clicked, the game will close.
+
+if instructions is clicked the background for the istructions screen will cover the main menu, if user clicks where the buttons were nothing will happen.
+The instructions will have a how to play section that will tell the user the controls for the game, arrow keys to move the paddle
+Under that there will be another section explaining the game.
+The explanation will tell them that they have 3 lives/tries to reflect the ball 20 times, and everytime the ball gets past the paddle the score will reset and they
+lose 1 life.
+On screen a rectangle and circle will be drawn under all the explanations .
+They will be labelled paddle and ball respectively, to show the user what is being talked about in the instructions.
+In the top left a yellow rectangle will be drawn and the word Back will be on it.
+This rectangle will act as a button to go back to the menu.
+If the user hovers the mouse cursor over this rectangle a new brighter yellow rectangle will be drawn over it and the word Back will also be on the rectangle.
+If the user clicks on the back button it will take them back to the menu.
+
+if the Start button gets clicked from the menu the background for the game will cover over the screen.
+A ball and paddle will be drawn. along with another button to go back to the menu in the top left. There will also be a score in the top right, each time the ball
+gets reflected the score goes up by 1. Lives will be on the paddle, the player starts with 3.
+If the back button is clicked the the score will be compared with the highscore(default at 0) if the score is bigger the highscore value gets replaced. The lives
+counter will also be reset.
+The ball will start in the middle of the displays width, and it's y coordinate will be a bit higher than the middle of the display's height.
+The ball will start to move towards the bottom of the screen.
+To detect a bounce a function will run to find the direction of the ball, it will find direction by checking if the x an y velocities are positive or negative this
+function will help to give attention to all possibilities of bouncing.
+If the ball hits a side wall the ball's x velocity will be multiplied by -1.
+If the ball hits the top of the paddle or the top of the screen the y velocity will be multiplied by -1
+If the ball hits a side of the paddle the x velocity will be multiplied by -1, and the y will be decreased to make it bounce more horizontally.
+If the ball hits a side of the paddle, there will be a check to see if the paddle was moving, if the paddle was moving then the ball's X will move along with the
+paddle making it look like the paddle is pushing the ball,.
+If the ball is being pushed into the side wall, it will move above the paddle and the x and y
+velocities will become bigger to imitate if it was being squished and then rocketed out. This is the only condition in which hitting the side of the paddle will not
+make you lose a life.
+If the ball goes past the paddle and hits the bottom of the screen, a oof sound effect will be played and a message will be displayed to the user saying they
+lost a life. Then the ball and paddle will reset back to the starting positions. The score will also be reset and the lives counter will go down by 1.
+
+The paddle will move right and left per user input. If the user presses the right or left arrow key the paddle will move to the left or right respectively.
+If the paddle gets to an edge of the display and the user tries to move the paddle past the wall that input will be ignored.
+
+If the user loses all 3 lives they will go to the lose screen.
+It will clear the screen, the games background will be put on screen, and it will say Game Over. A sound effect(sad Trombone) will play too. When the sound effect
+is done playing user goes straight back to the menu
+
+If the user gets to a score of 20, the highscore is set to 20 and they will go to the victory screen. The lives counter will reset to 3.
+In the middle of the victory screen it will display a message telling the user they won, the background will change colors periodically.
+In the top left corner of the victory screen will be another back button that will take the user back to the menu where the user can quit, or play again if they want to.
+
+Anytime in the game the user can close the window and it will work, if they are in the game when they do this the highscore gets checked with the players score
+if that score is bigger than the highscore the highscore gets replaced. The lives counter will get reset.
+
+
+
+
+
+
